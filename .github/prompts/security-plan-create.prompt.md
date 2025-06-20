@@ -50,7 +50,7 @@ You WILL reference the following threat categories when analyzing the system:
 
 ### Step 1: Plan File Creation
 
-1. You WILL create a plan file in `.copilot-tracking/prompts/` folder.
+1. You WILL create a plan file in `.copilot-tracking/plans/` folder.
 2. The filename WILL follow the pattern `security-plan-{{system-name}}.plan.md`.
 3. You WILL print the file path of this new plan in the conversation.
 4. You WILL update the plan file with step-by-step details on your approach.
