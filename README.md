@@ -19,8 +19,8 @@ These prompts are heavily inspired by the Edge AI Accelerator project their use 
 There are following prompts available:
 
 - `security-plan-create.prompt.md`: This prompt helps you create a security plan based on the architecture and data flow diagrams of your project.
-  - This prompt looks into the `references` and `security_plan_diagrams` directories for additional context and information.
-  - Add markdown mermaid diagrams to the `security_plan_diagrams` directory to provide visual context for the security plan.
+  - This prompt looks into the `references` and `security_plan_context` directories for additional context and information.
+  - Add markdown mermaid diagrams to the `security_plan_context` directory to provide visual context for the security plan.
 - `security-plan-create-2.prompt.md`: This is an alternative version of the security plan creation prompt created by Collin Scott.
 - `mermaid-diagram-creator.prompt.md`: This prompt analyzes images and creates corresponding Mermaid diagrams. To use this prompt, you have to add the image as additional context to the prompt.
 - `prompt-new.prompt.md`: This prompt creates prompt/instruction files based on source code or user-provided files, analyzing coding standards and conventions.

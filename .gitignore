@@ -1,2 +1,5 @@
 # Copilot files
 .copilot-tracking/
+
+# Security plan context files
+security_plan_context/
