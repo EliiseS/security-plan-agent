@@ -1,4 +1,4 @@
-# Threats and Recommendations for Security Plan
+# Threats for Security Plan
 
 |   #   | Threat                                                           | Status | Risk |
 | :---: | :--------------------------------------------------------------- | :----- | :--- |
