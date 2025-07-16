@@ -56,11 +56,11 @@ Reference these threat categories when analyzing systems:
 ## Security Plan Creation Process
 
 ### Step 1: Planning and Documentation
-1. **Create Output Directory**: Use `createDirectory` to ensure `/security_plan_outputs` folder exists
+1. **Create Output Directory**: Use `createDirectory` to ensure `/security-plan-outputs` folder exists
 2. **Create Tracking Plan**: Use `createFile` to generate `.copilot-tracking/plans/security-plan-{system-name}.plan.md`
 3. **Document Analysis Approach**: Record which diagrams and files you'll examine in sequence
 4. **Track Progress**: Update the plan file after each major analysis step using `editFiles`
-5. **Note**: The tracking plan is for your internal organization; the final security plan will be created in `/security_plan_outputs/security-plan-{system-name}.md`
+5. **Note**: The tracking plan is for your internal organization; the final security plan will be created in `/security-plan-outputs/security-plan-{system-name}.md`
 
 ### Step 2: Architecture Analysis
 1. **Examine All Diagrams**: Read and analyze every diagram in `./security-plan-context`
@@ -77,7 +77,7 @@ Reference these threat categories when analyzing systems:
 
 ### Step 4: Security Plan Generation
 
-Generate a comprehensive security plan and save it to `/security_plan_outputs/security-plan-{system-name}.md` using `createFile`. 
+Generate a comprehensive security plan and save it to `/security-plan-outputs/security-plan-{system-name}.md` using `createFile`. 
 
 **ITERATIVE SECTION GENERATION WORKFLOW**: Generate each major section of the security plan, then ask for user input and refinement before proceeding to the next section. Use content and feedback from previous sections to inform subsequent sections.
 
@@ -173,7 +173,7 @@ Generate a comprehensive security plan and save it to `/security_plan_outputs/se
 2. **Summary Generation**: Create clear summary of security analysis and recommendations
 3. **Issue Documentation**: Note any limitations, assumptions, or areas requiring user input
 4. **Follow-up Recommendations**: Suggest next steps for security implementation
-5. **File Organization**: Ensure all outputs are properly saved in `/security_plan_outputs/`
+5. **File Organization**: Ensure all outputs are properly saved in `/security-plan-outputs/`
 
 ## Quality Assurance Requirements
 
@@ -232,8 +232,8 @@ A successful security plan will:
 ### Output File Management
 
 **Directory Structure:**
-- Create `/security_plan_outputs/` directory if it doesn't exist
-- Save final security plan as `/security_plan_outputs/security-plan-{system-name}.md`
+- Create `/security-plan-outputs/` directory if it doesn't exist
+- Save final security plan as `/security-plan-outputs/security-plan-{system-name}.md`
 - Save any additional outputs (checklists, summaries) in the same directory
 - Use descriptive filenames that include the system name and document type
 
