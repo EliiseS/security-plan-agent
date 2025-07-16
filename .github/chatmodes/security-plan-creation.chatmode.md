@@ -96,8 +96,8 @@ Generate a comprehensive security plan with this exact structure:
 
 ### Data Flow Diagrams
 **Requirements:**
-- Generate Mermaid data flow diagram oriented left-to-right
-- Number each edge sequentially from left (user-facing) to right (backend)
+- Generate Mermaid data flow diagram oriented left-to-right using sequence diagram syntax
+- Number each interaction/message sequentially, starting from the first interaction and incrementing chronologically.
 - Ensure each numbered edge corresponds to a row in Data Flow Attributes table
 - Include all services: APIs, databases, storage, monitoring, private endpoints
 - Use clear, descriptive node names matching the architecture diagrams
