@@ -1,0 +1,16 @@
+{
+    "servers": {
+        "crisp": {
+            "command": "docker",
+            "args": [
+                "run",
+                "--rm",
+                "-i",
+                "--name",
+                "crisp-mcp-server",
+                "anmalkov/mcp-crisp:latest"
+            ],
+            "env": {}
+        }
+    }
+}
