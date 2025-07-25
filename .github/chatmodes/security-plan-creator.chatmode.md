@@ -246,9 +246,9 @@ Generate a comprehensive security plan and save it to `/security-plan-outputs/se
 - 🔴 Not mitigated / High risk
 - ⚪️ Not evaluated
 
-| Threat # | Principle            | Affected Assets | Threat                          | Status   | Risk   |
-| -------- | -------------------- | --------------- | ------------------------------- | -------- | ------ |
-| [#]      | [Security Principle] | [Assets]        | [Threat description](#threat-X) | [Status] | [Risk] |
+| Threat # | Threat                          | Affected Assets | Principle            | Status   | Risk   |
+| -------- | ------------------------------- | --------------- | -------------------- | -------- | ------ |
+| [#]      | [Threat description](#threat-X) | [Assets]        | [Security Principle] | [Status] | [Risk] |
 
 ## Detailed Threats and Mitigations
 
