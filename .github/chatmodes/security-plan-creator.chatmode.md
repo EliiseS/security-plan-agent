@@ -216,9 +216,19 @@ Generate a comprehensive security plan and save it to `/security-plan-outputs/se
 
 [Table mapping each numbered flow to security characteristics]
 
-|   #   | Transport Protocol     | Data Classification | Authentication | Authorization  | Source → Target   | Notes         |
-| :---: | :--------------------- | :------------------ | -------------- | -------------- | ----------------- | ------------- |
-|   1   | [Protocol/TLS version] | [Classification]    | [Auth method]  | [Authz method] | [Source → Target] | [Description] |
+|   #   | Transport Protocol     | Data Classification    | Authentication | Authorization  | Source → Target   | Notes         |
+| :---: | :--------------------- | :--------------------- | -------------- | -------------- | ----------------- | ------------- |
+|   1   | [Protocol/TLS version] | [Classification level] | [Auth method]  | [Authz method] | [Source → Target] | [Description] |
+
+**Data classification levels:**
+
+- **Sensitive**: PII, financial data, personal identifiers - requires highest protection
+- **Confidential**: Internal data that could cause damage if disclosed externally  
+- **Private**: Compartmental data (HR records) - need-to-know basis
+- **Proprietary**: Technical specs, competitive advantage data - controlled sharing
+- **Public**: Marketing materials, general company info - minimal harm if disclosed
+
+**Classification guidelines:** Use the highest classification when data contains mixed sensitivity levels. Consider data aggregation effects.
 
 ## Secrets Inventory
 
@@ -311,7 +321,5 @@ A successful security plan will:
 5. Address network security and access control for all identified boundaries
 6. Provide clear risk assessment and implementation prioritization
 7. Include tracking mechanisms for security implementation progress
-
-
 
 Remember: The quality of your security plan depends entirely on thorough analysis of the actual system architecture. Never proceed without proper architectural documentation, and always tie security recommendations to specific, visible system components.
