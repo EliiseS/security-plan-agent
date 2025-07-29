@@ -40,12 +40,9 @@ The following prompts are available to support the security plan creation workfl
 - [`prompt-new.prompt.md`](./.github/prompts/prompt-new.prompt.md): Creates prompt/instruction files based on source code or user-provided files, analyzing coding standards and conventions.
 - [`prompt-refactor.prompt.md`](./.github/prompts/prompt-refactor.prompt.md): Refactors existing prompt/instruction files to improve clarity, organization, and effectiveness while maintaining their original purpose.
 
-## Improvements
+## Threat generation
 
-- **Sequence Diagram Generation**: The security plan chat mode generates sequence diagrams instead of static data flow diagrams, providing better visualization of temporal interactions and security events between system components.
-- **Chat Mode Experience**: Enhanced interactive experience with specialized tools, guided workflows, and comprehensive validation.
-- Create a prompt with an adversary role that can analyze the security plan and suggest improvements or identify potential vulnerabilities.
-- Get threats and recommendations from a MCP Server to integrate it in a non static manner with the security plan agent.
+Threats are generated using the [anmalkov/mcp-crisp](https://hub.docker.com/r/anmalkov/mcp-crisp) MCP server.
 
 ## Contributing
 
