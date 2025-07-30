@@ -4,6 +4,14 @@ This repository contains a spike to explore the use of AI agents for generating 
 
 The primary approach is through the [`security-plan-creation.chatmode.md`](./.github/chatmodes/security-plan-creation.chatmode.md), which assists with the creation of security plans.
 
+## Features
+
+- Threats are generated using the [anmalkov/mcp-crisp](https://hub.docker.com/r/anmalkov/mcp-crisp) MCP server
+- Chat mode for guided workflows in security plan creation and prompt engineering
+- Progress is tracked by generating `.copilot-tracking/plans/<plan_name_.plan.md>` files
+- Specialized prompts for tasks such as diagram creation and prompt refactoring
+- Iterative process for refining security plans based on feedback and new information
+
 ## Chat Modes
 
 The main functionality is provided through specialized chat modes, each designed for specific tasks in the security plan creation and prompt engineering workflow.
@@ -12,8 +20,9 @@ The main functionality is provided through specialized chat modes, each designed
 
 1. Open GitHub Copilot Chat in VS Code
 2. Select the desired chat mode from the modes dropdown
-3. Follow the guided workflow specific to the selected chat mode
-4. The chat modes will automatically validate prerequisites and guide you through the process
+3. Choose a model that has reasoning and planning capabilities, such as `gpt-4o` or `Claude Sonnet 4`.
+4. Follow the guided workflow specific to the selected chat mode
+5. The chat modes will automatically validate prerequisites and guide you through the process
 
 ### Available Chat Modes
 
@@ -39,10 +48,6 @@ The following prompts are available to support the security plan creation workfl
 - [`mermaid-diagram-creator.prompt.md`](./.github/prompts/mermaid-diagram-creator.prompt.md): Analyzes images and creates corresponding Mermaid diagrams. To use this prompt, add the image as additional context to the prompt.
 - [`prompt-new.prompt.md`](./.github/prompts/prompt-new.prompt.md): Creates prompt/instruction files based on source code or user-provided files, analyzing coding standards and conventions.
 - [`prompt-refactor.prompt.md`](./.github/prompts/prompt-refactor.prompt.md): Refactors existing prompt/instruction files to improve clarity, organization, and effectiveness while maintaining their original purpose.
-
-## Threat generation
-
-Threats are generated using the [anmalkov/mcp-crisp](https://hub.docker.com/r/anmalkov/mcp-crisp) MCP server.
 
 ## Contributing
 
