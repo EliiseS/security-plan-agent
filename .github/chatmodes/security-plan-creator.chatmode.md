@@ -224,7 +224,7 @@ Generate a comprehensive security plan and save it to `/security-plan-outputs/se
 
 - **Sensitive**: PII, financial data, personal identifiers - requires highest protection
 - **Confidential**: Internal data that could cause damage if disclosed externally  
-- **Private**: Compartmental data (HR records) - need-to-know basis
+- **Private**: Compartmental data that might not do the company damage but must be keep private for other reasons.
 - **Proprietary**: Technical specs, competitive advantage data - controlled sharing
 - **Public**: Marketing materials, general company info - minimal harm if disclosed
 
